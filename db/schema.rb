@@ -12,21 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2020_08_16_083216) do
 
-  create_table "customers", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
-    t.string "first_kana"
-    t.string "last_kana"
-    t.string "post_number"
-    t.string "address"
-    t.string "phone_number"
-    t.string "email"
-    t.boolean "is_deleted"
-    t.string "encrypted_password"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "deliveries", force: :cascade do |t|
     t.integer "customer_id"
     t.string "post_number"
